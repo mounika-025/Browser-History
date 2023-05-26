@@ -1,4 +1,4 @@
-In this project, let's build a **Browser History** app by applying the concepts we have learned till now.
+ **Browser History** 
 
 ### Refer to the image below:
 
@@ -8,104 +8,57 @@ In this project, let's build a **Browser History** app by applying the concepts 
 </div>
 <br/>
 
-### Design Files
 
-<details>
-<summary>Click to view</summary>
 
-- [Extra Small (Size < 576px) and Small (Size >= 576px)](https://assets.ccbp.in/frontend/content/react-js/browser-history-sm-outputs.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Browser History](https://assets.ccbp.in/frontend/content/react-js/browser-history-lg-output.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Empty History View](https://assets.ccbp.in/frontend/content/react-js/browser-history-empty-view-lg-output.png)
+Description
+The Browser History app is designed to help users manage and search through a list of history items. It provides functionalities such as displaying history items with delete buttons, searching for specific history items, deleting items from the list, and displaying an empty history view when needed.
 
-</details>
+Features
+The app includes the following features:
 
-### Set Up Instructions
+Initial Display: Upon launching the app, the list of given history items will be displayed. Each history item will be accompanied by a delete button, allowing users to remove specific items from the list.
 
-<details>
-<summary>Click to view</summary>
+Search Functionality: Users can enter a non-empty value in the search input field to search for history items. The search is case-insensitive, meaning that the app will display history items that include the search input, regardless of the case of the characters.
 
-- Download dependencies by running `npm install`
-- Start up the app using `npm start`
-</details>
+Delete History Items: Clicking the delete button associated with a history item will remove the respective item from the list of history items. This feature allows users to manage and delete specific entries as desired.
 
-### Completion Instructions
+Empty History View: If a non-empty value is provided in the search input field, but no history item includes the provided value, the app will display an "Empty History View." This view indicates that there are no matching history items based on the search criteria.
 
-<details>
-<summary>Functionality to be added</summary>
-<br/>
+Empty History View on Deletion: When all the history items are deleted from the list, the app will display an "Empty History View." This view informs users that there are no remaining history items to display.
 
-The app must have the following functionalities
+Getting Started
+To run the Browser History app, follow these steps:
 
-- Initially, the list of given history items should be displayed with a delete button for each history item.
-- When a non-empty value is provided in the search input, then display the history items which includes the search input irrespective of case
-- When the delete button of a history item is clicked, then the respective history item should be deleted from the list of history items
-- When a non-empty value is provided in the search input element, and no history item includes the value given in the search input, then [Empty History View](https://assets.ccbp.in/frontend/content/react-js/browser-history-empty-view-lg-output.png) should be displayed
-- When all the history items are deleted, then [Empty History View](https://assets.ccbp.in/frontend/content/react-js/browser-history-empty-view-lg-output.png) should be displayed
+Clone the repository or download the source code.
 
-- The App is provided with `historyList`. It consists of a list of historyItem objects with the following properties in each historyItem object
+Install any required dependencies specified in the project's documentation.
 
-  |     Key      | Data Type |
-  | :----------: | :-------: |
-  |      id      |  Number   |
-  | timeAccessed |  String   |
-  |   logoUrl    |  String   |
-  |    title     |  String   |
-  |  domainUrl   |  String   |
+Set up the necessary environment for running the app (e.g., installing required libraries, configuring API keys, etc.).
 
-</details>
+Build and run the app using the provided instructions.
 
-### Important Note
+Usage
+Launch the Browser HistoryHistory Manager app on your device.
 
-<details>
-<summary>Click to view</summary>
+The initial list of history items will be displayed, with a delete button next to each item.
 
-<br/>
+Enter a non-empty value in the search input field to search for specific history items. The app will update the displayed list to include only the items that match the search criteria, disregarding the case of the characters.
 
-**The following instructions are required for the tests to pass**
+Click the delete button next to a history item to remove it from the list.
 
-- The `logoUrl` in the each history item have alt as **domain logo**
-- The delete button in the history item should have the `data-testid` as **delete**
+If the search input field has a non-empty value, but there are no history items that include the search input, the app will display an "Empty History View."
 
-</details>
+If all the history items are deleted from the list, the app will display an "Empty History View" to indicate that no items remain.
 
-### Resources
+Contributing
+Contributions to the Browser History app are welcome and encouraged. To contribute, follow these steps:
 
-<details>
-<summary>Image URLs</summary>
+Fork the repository and create a new branch for your contribution.
 
-- [https://assets.ccbp.in/frontend/react-js/history-website-logo-img.png](https://assets.ccbp.in/frontend/react-js/history-website-logo-img.png) alt should be **app logo**
-- [https://assets.ccbp.in/frontend/react-js/search-img.png](https://assets.ccbp.in/frontend/react-js/search-img.png) alt should be **search**
-- [https://assets.ccbp.in/frontend/react-js/delete-img.png](https://assets.ccbp.in/frontend/react-js/delete-img.png) alt should be **delete**
+Make the necessary changes and additions in your branch.
 
-</details>
+Test your changes thoroughly to ensure they work as expected.
 
-<details>
-<summary>Colors</summary>
+Submit a pull request with your changes, providing a detailed description of the modifications you made.
 
-<br/>
-
-<div style="background-color: #3367d6; width: 150px; padding: 10px; color: white">Hex: #3367d6</div>
-<div style="background-color: #2850a7; width: 150px; padding: 10px; color: white">Hex: #2850a7</div>
-<div style="background-color: #ececec; width: 150px; padding: 10px; color: black">Hex: #ececec</div>
-<div style="background-color: #64748b; width: 150px; padding: 10px; color: white">Hex: #64748b</div>
-<div style="background-color: #f8fafc; width: 150px; padding: 10px; color: black">Hex: #f8fafc</div>
-<div style="background-color: #6697ff; width: 150px; padding: 10px; color: black">Hex: #6697ff</div>
-<div style="background-color: #ffffff; width: 150px; padding: 10px; color: black">Hex: #ffffff</div>
-<div style="background-color: #475569; width: 150px; padding: 10px; color: white">Hex: #475569</div>
-<br/>
-
-</details>
-
-<details>
-<summary>Font-families</summary>
-
-- Roboto
-
-</details>
-
-> ### _Things to Keep in Mind_
->
-> - All components you implement should go in the `src/components` directory.
-> - Don't change the component folder names as those are the files being imported into the tests.
-> - **Do not remove the pre-filled code**
-> - Want to quickly review some of the concepts you’ve been learning? Take a look at the Cheat Sheets.
+Your contribution will be reviewed, and if approved, it will be merged into the main codebase.
